@@ -1,0 +1,32 @@
+GET http://localhost:3000/users
+
+###
+
+GET http://localhost:3000/users/62de4388c139fc46cce8f6d4
+
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "firstName": "Leo",
+    "lastName": "Davidson",
+    "age": 21,
+    "isFree": true
+}
+
+###
+
+PUT http://localhost:3000/users/62de4388c139fc46cce8f6d4
+Content-Type: application/json
+
+{
+    "firstName": "Bill",
+    "lastName": "Davidson",
+    "age": 22,
+    "isFree": false
+}
+###
+
+DELETE http://localhost:3000/users/62de4388c139fc46cce8f6d4
